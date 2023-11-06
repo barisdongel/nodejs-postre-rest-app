@@ -24,5 +24,6 @@ db.sequelize.sync({ force: true }).then(() => {
 });
 
 db.tutorials = require("./tutorial.model.js")(sequelize, Sequelize);
+db.post = require("./post.model.js")(sequelize, Sequelize);
 
 module.exports = db;
